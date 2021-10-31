@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:text="@string/one_text"-->
+<!--        android:textSize="20dp"-->
+<!--        android:background="@color/cardview_shadow_end_color"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:gravity="center_vertical"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:shadowColor="@color/diy_red"-->
+<!--        android:shadowRadius="3.0"-->
+<!--        android:shadowDx="20"-->
+<!--        android:shadowDy="20"-->
+<!--        android:singleLine="true"-->
+<!--        android:focusable="true"-->
+<!--        android:ellipsize="marquee"-->
+<!--        android:focusableInTouchMode="true"-->
+<!--        android:marqueeRepeatLimit="marquee_forever"-->
+<!--    >-->
+<!--        <requestFocus/>-->
+<!--    </TextView>-->
+<!--    <Button-->
+<!--        android:id="@+id/btn"-->
+<!--        android:text="按钮"-->
+<!--        android:background="@drawable/btn_selector"-->
+<!--        android:backgroundTint="@color/cardview_dark_background"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_width="100dp"-->
+<!--        tools:ignore="MissingConstraints" />-->
+<!--    <EditText-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:hint="请输入用户名"-->
+<!--        android:textColorHint="#95adaa"-->
+<!--        android:inputType="phone"-->
+<!--        />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="@string/one_text"
+            android:textSize="20dp"
+            android:background="@color/cardview_shadow_end_color"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:shadowColor="@color/diy_red"
+            android:shadowRadius="3.0"
+            android:shadowDx="20"
+            android:shadowDy="20"
+            android:singleLine="true"
+            android:focusable="true"
+            android:ellipsize="marquee"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+        >
+            <requestFocus/>
+        </TextView>
+        <Button
+            android:id="@+id/btn"
+            android:text="按钮"
+            android:onClick="handleClick"
+            android:background="@drawable/btn_selector"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_height="50dp"
+            android:layout_width="100dp"
+            tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:hint="请输入用户名"
+            android:textColorHint="#95adaa"
+            android:inputType="phone"
+            android:drawablePadding="20dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_baseline_accessibility_24"
+            android:background="#eaeaea"
+            />
+        <Button
+        android:id="@+id/editbtn"
+        android:text="获取用户名"
+        android:background="@drawable/btn_selector"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:layout_height="50dp"
+        android:layout_width="150dp"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ceshi"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            >
+        </ImageView>
+
+        <ProgressBar
+            android:id="@+id/probar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/showbtn"
+            android:text="显示/隐藏"
+            android:background="@drawable/btn_selector"
+            android:layout_height="50dp"
+            android:layout_width="150dp"/>
+</LinearLayout>
